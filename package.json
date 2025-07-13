@@ -1,7 +1,9 @@
 {
-  "name": "@mayurcomprezss/shared-huffman",
+  "name": "@mayurdev07/shared-huffman",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "type": "module"
+  "publishConfig": {
+    "access": "public"
+  }
 }
