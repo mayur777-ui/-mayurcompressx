@@ -1,10 +1,30 @@
 {
   "name": "shared-huffman",
   "version": "1.0.4",
+  "description": "A minimal Huffman encoder/decoder for message compression in Node.js and browser.",
   "main": "index.js",
   "type": "module",
   "exports": {
     ".": "./index.js"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "author": "Mayur",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mayur777-ui/shared-huffman.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mayur777-ui/shared-huffman/issues"
+  },
+  "homepage": "https://github.com/mayur777-ui/shared-huffman#readme",
+  "keywords": [
+    "huffman",
+    "compression",
+    "encoding",
+    "decoding",
+    "algorithm",
+    "binary",
+    "npm",
+    "shared-huffman"
+  ]
 }
