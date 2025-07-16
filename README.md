@@ -1,44 +1,24 @@
 # 🧠 shared-huffman
 
-A minimal, blazing-fast JavaScript Huffman Encoder & Decoder – perfect for learning data compression, building educational tools, or adding lightweight compression to your apps.
+**A lightweight Huffman compression algorithm implementation in JavaScript.**  
+Effortlessly encode and decode strings using binary trees. Great for learning or integrating into web projects.
 
-![npm](https://img.shields.io/npm/v/shared-huffman?color=blue&style=flat-square)
-![downloads](https://img.shields.io/npm/dt/shared-huffman?style=flat-square)
-![license](https://img.shields.io/npm/l/shared-huffman?style=flat-square)
+<p align="center">
+  <a href="https://www.npmjs.com/package/shared-huffman">
+    <img src="https://img.shields.io/npm/v/shared-huffman?color=blue&style=flat-square" alt="npm version" />
+  </a>
+</p>
 
 ---
 
-## 📦 Installation
+## 🚀 Install
 
 ```bash
 npm install shared-huffman
+```
 
----
+## 📦 Import
 
-## 🚀 Use Cases
-
-Here are some real-world and learning-focused use cases where `shared-huffman` shines:
-
-- 🧑‍🎓 **Educational Tools**  
-  Perfect for demonstrating how Huffman coding works in computer science or data structure classes.
-
-- ⚙️ **Browser-based Compression**  
-  Use it in client-side apps to compress form data, chat messages, or short text before sending.
-
-- 🔍 **Algorithm Visualizers**  
-  Integrate with tree-drawing libraries to visualize Huffman trees in real-time.
-
-- 📚 **Competitive Programming / DSA Practice**  
-  Great for understanding how frequency-based encoding can optimize storage.
-
-- 🧪 **Testing Compression Concepts**  
-  Compare Huffman compression with other techniques like RLE or LZW in small projects.
-
-- 📁 **File-like Encoding**  
-  Use it as a starting point for building lightweight, custom file compressors.
-
----
-Code Examples
 ```js
 import {
   buildFrequencyMap,
@@ -47,15 +27,66 @@ import {
   encode,
   decode
 } from 'shared-huffman';
+```
 
-const text = "hello world";
+## 🔍 Example Usage
 
-const freqMap = buildFrequencyMap(text);
+```js
+const str = "hello huffman";
+
+const freqMap = buildFrequencyMap(str);
 const tree = buildHuffmanTree(freqMap);
 const codeMap = generateCodes(tree);
-const compressed = encode(text, codeMap);
-const original = decode(compressed, tree);
 
-console.log("Original:", text);
-console.log("Compressed:", compressed);
-console.log("Decompressed:", original);
+const encoded = encode(str, codeMap);
+console.log("Encoded:", encoded);
+
+const decoded = decode(encoded, tree);
+console.log("Decoded:", decoded);
+```
+
+## 🧩 Features
+
+- ✅ Simple & Dependency-Free
+- ✅ Modern ES Module support
+- ✅ Educational use-case for DSA learners
+- ✅ Accurate string compression & decompression
+- ✅ Plug-and-play for frontend/backend
+
+## 📚 API Reference
+
+- `buildFrequencyMap(str)` → Returns character frequency object
+- `buildHuffmanTree(freqMap)` → Builds Huffman tree
+- `generateCodes(tree)` → Generates binary codes for each character
+- `encode(str, codeMap)` → Encodes a string
+- `decode(encodedStr, tree)` → Decodes a binary string
+
+## 📘 Learnings & Why This?
+
+Huffman coding is a fundamental compression technique taught in DSA courses and coding interviews. This project helps you understand:
+
+- ✅ Greedy algorithms in action
+- ✅ Binary Trees & Traversals
+- ✅ Priority Queues (via frequency sorting)
+- ✅ Bitwise compression concepts
+
+## 🌐 Useful Links
+
+- [📦 View on NPM](https://www.npmjs.com/package/shared-huffman)
+- [💻 Source on GitHub](https://github.com/mayur777-ui/shared-huffman)
+
+## 👨‍💻 Author
+
+**Mayur Laxkar**  
+Full-stack Developer | CS Undergrad  
+🌐 [GitHub Profile](https://github.com/mayur777-ui)
+
+## 📄 License
+
+MIT
+
+---
+
+<p align="center">
+  ⭐ If you like this project, please give it a star on <a href="https://github.com/mayur777-ui/shared-huffman">GitHub</a>!
+</p>
