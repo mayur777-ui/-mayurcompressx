@@ -88,5 +88,5 @@ MIT
 ---
 
 <p align="center">
-  ⭐ If you like this project, please give it a star on <a href="https://github.com/mayur777-ui/shared-huffman">GitHub</a>!
+  ⭐ If you like this project, please give it a star on <a href="https://github.com/mayur777-ui/huffpack">GitHub</a>!
 </p>

@@ -1,6 +1,6 @@
 {
   "name": "shared-huffman",
-  "version": "1.0.5",
+  "version": "",
   "description": "A minimal Huffman encoder/decoder for message compression in Node.js and browser.",
   "main": "index.js",
   "type": "module",
